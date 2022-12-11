@@ -162,24 +162,6 @@ def parseMoney(block):
     
     return monkey
 
-def lcm(x, y):
-   """This function takes two
-   integers and returns the L.C.M."""
-
-   # Choose the greater number
-   if x > y:
-       greater = x
-   else:
-       greater = y
-
-   while(True):
-       if((greater % x == 0) and (greater % y == 0)):
-           lcm = greater
-           break
-       greater += 1
-
-   return lcm
-
 def runRound(monkeyList, isBored = True, u = 0):
     for monkey in monkeyList:
         # print(f'Monkey {monkey.getId()}:')
